@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use('/', createProxyMiddleware({
-    target: 'https://www.ubereats.com',
+    target: 'https://prototype-staging.ubereats.com',
     changeOrigin: true,
     //logLevel: 'debug',
 }));
